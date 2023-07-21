@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:825148403966:task-definition/aws-hello-world-rest-api:1"
+        TaskDefinition: "arn:aws:ecs:ap-southeast-1:482983607458:task-definition/app-deploy:1"
         LoadBalancerInfo:
-          ContainerName: "aws-hello-world-rest-api"
+          ContainerName: "app"
           ContainerPort: "80"
         PlatformVersion: "LATEST"
